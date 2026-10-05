@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad — Pempins</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6fa;
+      color: #202536;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+    }
+    a { color: #3649a8; }
+    h2 { margin-top: 32px; }
+    @media (max-width: 600px) {
+      main { margin: 16px; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html">Volver a Pempins</a>
+    <h1>Privacidad y tratamiento de información</h1>
+    <p>Última actualización: 06/10/2026.</p>
+
+    <h2>Aplicación y web informativa</h2>
+    <p>
+      Pempins es una aplicación de acceso restringido para organizar
+      y consultar información de carteras. Esta web informativa no
+      permite acceder a la aplicación ni consultar datos financieros.
+    </p>
+
+    <h2>Información de la aplicación</h2>
+    <p>
+      La aplicación trata la información que introducen o importan
+      sus usuarios autorizados, así como identificadores y registros
+      necesarios para controlar el acceso y mantener la trazabilidad.
+      La auditoría puede contener identificadores de usuario y cartera,
+      acciones realizadas y valores anteriores y posteriores.
+    </p>
+
+    <h2>Acceso a Google Drive</h2>
+    <p>
+      La integración utiliza el permiso drive.file para ver, editar,
+      crear y eliminar los archivos utilizados con la aplicación.
+      Este permiso no concede acceso general a todos los archivos
+      de la cuenta Google.
+    </p>
+    <p>
+      La integración está en preparación. Las pruebas realizadas
+      acreditan acceso a un archivo ficticio, no un servicio activo
+      de traslado automático y conservación de copias.
+      El almacenamiento de copias cifradas en Drive es una función
+      prevista cuya activación y retención deben verificarse.
+    </p>
+
+    <h2>Monitorización y Telegram</h2>
+    <p>
+      El monitor utiliza Google Apps Script y está preparado para
+      realizar solicitudes a servicios externos. El flujo de avisos
+      de Telegram revisado envía el identificador del chat privado
+      y mensajes operativos genéricos sobre disponibilidad del servicio,
+      estado de las copias y capacidad de almacenamiento.
+      Ese flujo no incorpora datos financieros ni contenido de copias.
+    </p>
+    <p>
+      La última ejecución confirmada del monitor corresponde a su
+      estado desactivado. No existe una implementación de eliminación
+      automática de los mensajes enviados a Telegram.
+    </p>
+
+    <h2>Copias locales</h2>
+    <p>
+      El mecanismo de copia conserva por defecto las treinta copias
+      más recientes, según el número de ejecuciones, no según semanas
+      o meses. Al generar otra copia, elimina las que exceden el límite
+      y los archivos asociados que gestiona.
+    </p>
+    <p>
+      Las copias locales pueden permanecer sin cifrar. Generar una
+      versión cifrada no elimina automáticamente la copia SQLite
+      original. La eliminación de archivos tampoco garantiza su
+      borrado físico seguro.
+      El temporizador de copias comprobado estaba deshabilitado.
+    </p>
+
+    <h2>Conservación de registros</h2>
+    <p>
+      No existe un plazo uniforme de eliminación para todos los
+      registros. Los registros técnicos del servidor dependen de
+      los mecanismos de rotación y límites del sistema.
+      Los registros de ejecución de Apps Script dependen también
+      de los servicios y la configuración de Google; no se ha
+      acreditado un plazo efectivo específico del proyecto.
+    </p>
+    <p>
+      El monitor mantiene un estado actualizado con contadores,
+      fechas y motivos del último aviso confirmado, sin caducidad
+      automática. Los eventos de auditoría de la aplicación no
+      tienen purga automática y sus mecanismos de integridad
+      restringen la modificación y eliminación por vías ordinarias.
+    </p>
+    <p>
+      No se aplica actualmente una retención acreditada de cuatro
+      copias semanales y tres mensuales en los destinos local y remoto.
+      Eliminar información de la aplicación no implica su eliminación
+      inmediata de copias o registros anteriores.
+    </p>
+
+    <h2>Proveedores externos</h2>
+    <p>
+      Según las funciones utilizadas, Google procesa archivos,
+      metadatos, autorizaciones y registros de ejecución;
+      Telegram procesa los mensajes y los identificadores necesarios
+      para entregarlos. Sus servicios tienen condiciones y políticas
+      propias de tratamiento y conservación.
+    </p>
+    <p>
+      Esta web se aloja en GitHub Pages. El proveedor puede tratar
+      información técnica de las visitas, como direcciones IP,
+      para prestar y proteger el servicio.
+    </p>
+
+    <h2>Revocación y solicitudes</h2>
+    <p>
+      El titular de la cuenta puede revocar la autorización de Pempins
+      desde la configuración de su cuenta Google. La revocación no
+      elimina automáticamente archivos, registros o mensajes existentes.
+    </p>
+    <p>
+      Para consultas de privacidad o solicitudes relacionadas con
+      información personal, escribe a
+      <a href="mailto:soporte-pempins@googlegroups.com">
+        soporte-pempins@googlegroups.com
+      </a>.
+      Este canal utiliza Google Groups y entrega las consultas
+      a sus miembros autorizados. No envíes contraseñas, tokens,
+      copias de seguridad ni documentación financiera.
+    </p>
+
+    <p><a href="condiciones.html">Condiciones de uso</a></p>
+  </main>
+</body>
+</html>
